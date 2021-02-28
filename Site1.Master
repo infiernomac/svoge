@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="svoge.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+	</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+            	<table class="auto-style3">
+					<tr>
+						<td class="auto-style2">
+							<asp:Image ID="Image1" runat="server" ImageAlign ="TextTop" ImageUrl="~/pic/top.jpg" Width="1225px" ValidateRequestMode="Enabled" />
+						</td>
+					</tr>
+					<tr>
+						<td class="auto-style1" >
+							<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BorderWidth="0px">
+								<Items>
+									<asp:MenuItem ImageUrl="~/pic/immnu_01a.gif" NavigateUrl="~/WebForm1.aspx"></asp:MenuItem>
+									<asp:MenuItem ImageUrl="~/pic/immnu_02a.gif" PopOutImageUrl="~/pic/immnu_02b.gif" Selectable="False">
+										<asp:MenuItem Selectable="False" Text="Начално училище" Value="Начално училище">
+											<asp:MenuItem Text="История в Дати" Value="История в Дати" NavigateUrl="~/WebForm2.aspx"></asp:MenuItem>
+										</asp:MenuItem>
+									</asp:MenuItem>
+									<asp:MenuItem ImageUrl="~/pic/immnu_03a.gif" PopOutImageUrl="~/pic/immnu_03b.gif" NavigateUrl="~/WebForm3.aspx"></asp:MenuItem>
+									<asp:MenuItem ImageUrl="~/pic/immnu_04a.gif" PopOutImageUrl="~/pic/immnu_04b.gif" NavigateUrl="~/WebForm4.aspx">
+										<asp:MenuItem NavigateUrl="~/WebForm5.aspx" Text="Създай акаунт" Value="Създай акаунт"></asp:MenuItem>
+										<asp:MenuItem NavigateUrl="~/WebForm6.aspx" Text="Забравена парола" Value="Забравена парола"></asp:MenuItem>
+									</asp:MenuItem>
+									<asp:MenuItem ImageUrl="~/pic/immnu_05a.gif" PopOutImageUrl="~/pic/immnu_05b.gif" NavigateUrl="~/WebForm7.aspx"></asp:MenuItem>
+									<asp:MenuItem ImageUrl="~/pic/immnu_06a.gif" PopOutImageUrl="~/pic/immnu_06b.gif" NavigateUrl="~/WebForm9.aspx"></asp:MenuItem>
+									<asp:MenuItem ImageUrl="~/pic/immnu_07a.gif" PopOutImageUrl="~/pic/immnu_07b.gif" NavigateUrl="https://dariknews.bg/"></asp:MenuItem>
+									<asp:MenuItem ImageUrl="~/pic/immnu_08a.gif" PopOutImageUrl="~/pic/immnu_08b.gif" NavigateUrl="https://www.unibit.bg/"></asp:MenuItem>
+								</Items>
+							</asp:Menu>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<asp:Image ID="Image2" runat="server" Height="33px" ImageAlign="Middle" ImageUrl="~/pic/menu.jpg" style="margin-left: 0px" Width="1225px" />
+						</td>
+					</tr>
+					</table>
+        </div>
+    	<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+		</asp:ContentPlaceHolder>
+    	<asp:Image ID="Image3" runat="server" ImageUrl="~/pic/bottom.jpg" style="margin-left: 0px" Width="1225px" />
+    </form>
+</body>
+</html>
